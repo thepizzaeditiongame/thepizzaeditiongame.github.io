@@ -1,0 +1,8 @@
+.counter-block {padding: 5px;border: 1px solid #656945;width: 40%;float: right;text-align: center;}
+.counter-block h3 {margin: 0 !important;}
+.counter-block p {margin: 0;}
+.counter-block span {font-size: 10px;}
+.md-pvc-total-reports {float: left;width: 100%;}
+.md-pvc-total-reports .md-pvc-total-reports-sub {float: left;width: auto;background: red;text-align: center;vertical-align: middle;top: 0;bottom: 0;left: 0;right: 0;border-radius: 5px;}
+.md-pvc-total-reports .md-pvc-total-reports-sub span {float: left;padding: 5px;border: 1px solid #000;border-radius: 6px;width: 25px;text-align: center;margin: 5px;color: #fff;background: #000;}
+.md-pvc-total-reports .md-pvc-total-reports-sub span.text {width: auto !important;}

@@ -1,0 +1,1634 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, address, big, cite, code, del, dfn, em, img, ins, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, input, legend, caption, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, main, nav, output, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, nav {
+  list-style: none; }
+
+* {
+  box-sizing: border-box; }
+
+img, video, canvas {
+  max-width: 100%; }
+
+img {
+  vertical-align: bottom; }
+
+a {
+  text-decoration: underline;
+  color: #4160ea;
+  }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+iframe {
+  width: 100%; }
+
+a, button, a:hover, button:hover {
+  cursor: pointer; }
+
+button, button:focus, button:active {
+  outline: none;
+  border: none; }
+
+blockquote {
+  margin: 0; }
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'), local('Gilroy'),
+        url('/wp-content/themes/mortalkombat/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/mortalkombat/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+        url('/wp-content/themes/mortalkombat/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: local('Gilroy'), local('Gilroy'),
+        url('/wp-content/themes/mortalkombat/fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/mortalkombat/fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+        url('/wp-content/themes/mortalkombat/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Insaniburger';
+    src: local('Insaniburger'), local('Insaniburger'),
+         url('/wp-content/themes/mortalkombat/fonts/Insanibu.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #41516e;
+  letter-spacing: normal;
+  font-size: 16px;
+  background-color: #41516e;
+  }
+
+h1, .h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #514f4f; }
+
+h2, .h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #474747; }
+
+h3, .h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #244770; }
+
+p {
+  margin-bottom: 20px; }
+
+div p:last-child {
+  margin-bottom: 0; }
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+
+
+.main__content.game-offer{
+	position: relative;
+}	
+.main_overlay{
+	position: absolute;
+	background-size: cover !important;
+	width: 960px;
+	height: 586px;
+	left: 0px;
+	top: 148px;
+	z-index: 1000;
+	text-align:center;
+	padding-top:200px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}	
+.main_overlay .preview{
+	width: 158px;
+	height: 158px;
+	border-radius: 20px;
+}	
+.play.btn-play {
+    width: 167px;
+    background: #FF3A2F;
+    border-radius: 10px;
+	margin-top:15px;
+	cursor: pointer;
+}
+.play.btn-play:hover{
+	background: #43284F;
+	color: #fff;
+}	
+.play.btn-play img {
+    margin-right: 10px;
+}
+.main_overlay.display_none{
+  display:none;	
+}
+
+
+
+.heading {
+  font-family: 'Insaniburger';
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  }
+.main__head.popular .heading:before{
+  content: url("/wp-content/themes/mortalkombat/img/popular.svg");
+  position: absolute;
+  left: -60px;
+  top: -9px;
+}
+.main__head.best .heading:before{
+  content: url("/wp-content/themes/mortalkombat/img/best.svg");
+  position: absolute;
+  left: -60px;
+  top: -9px;
+}
+.flex-auto {
+  flex: auto; }
+
+.icon-all_games {
+  display: block;
+  width: 42px;
+  height: 58px;
+  background: url("/wp-content/themes/mortalkombat/img/AllGame.svg") center no-repeat;
+   }
+
+.icon-popular {
+  display: inline-block;
+  width: 42px;
+  height: 58px;
+  background: url("/wp-content/themes/mortalkombat/img/Popular.svg") center no-repeat;
+  }
+
+.icon-best_games {
+  display: inline-block;
+  width: 42px;
+  height: 58px;
+  background: url("/wp-content/themes/mortalkombat/img/BestGames.svg") center no-repeat;
+  }
+
+.icon-top10 {
+  display: inline-block;
+  width: 42px;
+  height: 58px;
+  background: url("/wp-content/themes/mortalkombat/img/Top10.svg") center no-repeat;
+   }
+
+.icon-views-orange {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("/wp-content/themes/mortalkombat/img/icon-show-orange.svg") 0 0 no-repeat;
+  margin-right: 5px; }
+
+.icon-fullscreen {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url("/wp-content/themes/mortalkombat/img/icon-fullscreen.svg") 0 0 no-repeat;
+  background-size: cover; 
+  margin-right: 10px;}
+
+.icon-like {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("/wp-content/themes/mortalkombat/img/icon-like.svg") 0 0 no-repeat; }
+
+.icon-dislike {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("/wp-content/themes/mortalkombat/img/icon-dislike.svg") 0 0 no-repeat; }
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: 0;
+  background: url("/wp-content/themes/mortalkombat/img/btn-search-bg-normal.png") 0 0 no-repeat; }
+  .btn-search:hover {
+    background: url("/wp-content/themes/mortalkombat/img/btn-search-bg-hover.png") 0 0 no-repeat; }
+  .btn-search.active, .btn-search:active {
+    background: url("/wp-content/themes/mortalkombat/img/btn-search-bg-active.png") 0 0 no-repeat; }
+
+.btn-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 58px;
+  border-radius: 30px;
+  outline: 0;
+  background: url("/wp-content/themes/mortalkombat/img/btn-play-bg-normal.png") 0 0 no-repeat;
+  background-size: cover; }
+  .btn-play:hover {
+    background: url("/wp-content/themes/mortalkombat/img/btn-play-bg-hover.png") 0 0 no-repeat;
+    background-size: cover; }
+  .btn-play:active {
+    background: url("/wp-content/themes/mortalkombat/img/btn-play-bg-active.png") 0 0 no-repeat;
+    background-size: cover; }
+  .btn-play span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase; }
+
+.btn-fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 50px;
+  outline: 0;
+  }
+  
+
+.page {
+  width: 100%;
+  }
+
+.header {
+  position: relative;
+  background: #303b5e;
+  margin-bottom: 30px;
+  height: 96px;
+  }
+  .header .wrapper {
+    max-width: 1320px;
+    height: 96px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+.top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+  }
+
+.logo {
+  margin-top: 0px; }
+
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px 5px;
+  z-index: 1;
+   }
+  .footer .menu {
+    margin: 0 auto;
+  } 
+  li.privacy {
+    margin-top: -13px;
+}
+.menu li.privacy:hover {
+    padding-bottom: 10px;
+    margin-top: -2px;
+}
+.footer .menu ul li:after {
+   top: 12px;
+}  
+.footer .menu ul li:last-child:after {
+  display:none;
+} 
+.footer .menu ul li {
+    width: 160px;
+	height: 45px;
+    padding-bottom: 10px;
+}   
+a.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+} 
+  .menu ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .menu ul li {
+      position: relative;
+      width: 180px;
+      z-index: 1;
+      overflow: hidden;
+       }
+     .menu ul li:after{
+      position: absolute;
+      content: '';
+      right: 0px;
+      top: 21px;
+      border-right: solid 1px #4c3258;
+      height: 20px;
+     }  
+     .top .menu ul li:nth-child(4):after{
+      display: none;
+     }
+      .menu ul li a {
+        display: flex;
+        margin-top: 6px;
+		    text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%; 
+      flex-direction: row;}
+      .menu ul li a span, .footer .menu ul li a {
+        font-family: 'Gilroy Bold', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+		
+        text-transform: uppercase;
+        margin-bottom: 12px; }
+      .menu ul li:hover {
+        background: #2b2b2b;
+        border-radius: 10px;
+        }
+      
+ .search-container .search input {
+    background: #a07195;
+    border-radius: 16px;
+    height: 64px;
+    min-width: 340px;
+    margin-left: 15px;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}     
+.search-container .search input::placeholder{
+  color:#fff;
+}
+.search {
+  position: relative;
+}
+.search:before{
+  content: url("/wp-content/themes/mortalkombat/img/Search.svg") ;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+  align-items: flex-start;}
+.main.single {
+    margin: 0 20px;
+}
+.sidebar-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+ }
+.first_block {
+    display: flex;
+    justify-content: space-between;
+}
+.block2 {
+    width: 100%;
+    margin-right: 20px;
+}
+.sidebar {
+  width: 100%;
+  margin-bottom: 30px;
+ }
+ .sidebar.favorit {
+  margin-right: 0px;
+  margin-left: 40px;
+ }  
+ .sidebar.single img {
+    width: 124px;
+}
+.sidebar.single .item:hover img{
+  border: 2px solid #fff;
+}
+.sidebar.single .best-games__list li {
+    margin-bottom: 0px;
+    text-align: center;
+    max-width: 84px;
+    background: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+.sidebar.single .best-games__list li span {
+    position: absolute;
+    opacity: 0;
+}    
+.midle_block {
+    display: flex;
+    flex-direction: row;
+   
+}
+.cell label{
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  bottom: -10px;
+  text-align: center;
+  opacity: 0;
+  font-size: 14px;
+  color: #0C1C4D;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 10px 0px;
+  z-index: 100;
+  cursor: pointer;
+}
+.sidebar.single {
+    width: 150px;
+}
+.top .sidebar.single .best-games {
+   background: #ced2e1;
+   /*box-shadow:  inset 12px 8px 16px #ced2e1, inset -12px -8px 16px #ced2e1;*/
+    border:none;
+}
+.main-page .sidebar__content.best-games{
+  background: #e1e1e1 !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+}
+.new .sidebar.single .best-games {
+    background: #ced2e1;
+    box-shadow: inset 12px 8px 16px #ced2e1, inset -12px -8px 16px #ced2e1;
+    border:none;
+}
+.top .sidebar.single .sidebar__head {
+   border:none;
+   background: #303b5e;
+   /*box-shadow: inset 12px 8px 16px #303b5e, inset -12px -8px 16px #303b5e;*/
+}
+.new .sidebar.single .sidebar__head {
+   border:none;
+   background: #303b5e;
+  box-shadow: inset 12px 8px 16px #303b5e, inset -12px -8px 16px #303b5e;
+}
+.top .sidebar.single .sidebar__head .heading:before{
+   /*content: url(/wp-content/themes/mortalkombat/img/top_games.png);*/
+   position: absolute;
+   left: -6px;
+   top: 0px;
+}
+.new .sidebar.single .sidebar__head .heading:before{
+   /*content: url(/wp-content/themes/mortalkombat/img/new_games.png);*/
+   position: absolute;
+   left: -6px;
+   top: 6px;
+}
+.sidebar.single .heading {
+    font-size: 24px;
+    margin-left: 0px;
+    position: relative;
+}
+.sidebar__head h2 {
+    color: #fff;
+}
+.sidebar__head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 32px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 78px;
+    background: #ff9900;
+    border: 4px solid #7f4b23;
+    border-radius: 20px 20px 0px 0px; }
+  .sidebar__content {
+     padding: 16px 0 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
+
+.main {
+  width: 100%;
+  margin-bottom: 30px; }
+  .main__head.main__head.popular {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background: #583f6f;
+    /*box-shadow: inset 12px 8px 16px #262f2f, inset -12px -8px 16px #262f2f;*/
+    border-radius: 40px 40px 0 0;
+     }
+
+  .main__head.main__head.best {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background: #79b7ad;
+    /*box-shadow: inset 12px 8px 16px #ffdd5a, inset -12px -8px 16px #ffdd5a;*/
+    border-radius: 40px 40px 0 0;
+     }   
+	
+.main__head.main__head.trending {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background: #79b7ad;
+    /*box-shadow: inset 12px 8px 16px #262f2f, inset -12px -8px 16px #262f2f;*/
+    border-radius: 40px 40px 0 0;
+     }   
+
+	.title_recommend {
+    background: #FFDC00;
+    border: 2px solid #7f4b23;
+    border-radius: 16px;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #2C0054;
+    padding: 10px;
+    position: relative;
+}
+.title_recommend:before{
+  content: ''; 
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom: 10px solid#FFDC00;
+  left: 42%;
+  top: -20px;
+}
+.recommended-games .item, .best-games .item, .trending-games .item{
+  position: relative;
+  margin: 10px 0;
+}
+.main__head.trending .heading:before {
+    content: url(/wp-content/themes/mortalkombat/img/trend.svg);
+    position: absolute;
+    left: -60px;
+    top: -9px;
+}
+.main__head.new_games .heading:before {
+    content: url(/wp-content/themes/mortalkombat/img/new_game.svg);
+    position: absolute;
+    left: -60px;
+    top: -9px;
+}
+.title_pop_up{
+   width: 100%;
+  position: absolute;
+  z-index: 100;
+ }
+.title_pop_up.no-visible{
+  opacity: 0;
+}
+.block_adv_top{
+    padding: 40px 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 28px;
+    background: #d0a3e7;
+    background: -webkit-gradient(linear, left top, right top, from(#d0a3e7), to(#82b0f5));
+    background: linear-gradient(to right, #d0a3e7 0%, #82b0f5 100%);
+    -webkit-filter: progid:dximagetransform.microsoft.gradient(startColorstr="#d0a3e7", endColorstr="#82b0f5", GradientType=1);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr="#d0a3e7", endColorstr="#82b0f5", GradientType=1);
+  
+}
+	
+  .main__content {
+    padding: 16px 0 20px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
+.game-offer__content {
+   background: #5fb7b9;
+    box-shadow:  inset -12px -8px 16px #5fb7b9;
+    border-radius: 40px;
+    padding: 24px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #7D6058;
+    margin-bottom: 30px;
+}
+.related_posts .catalog__list {
+  margin-top: 0px;
+}
+.game-offer__content .game-offer-block {
+  background: #F9F6FF;
+  box-shadow: inset 2px 2px 4px #F6F1FF, inset -6px -6px 12px #A898C7;
+  border-radius: 20px;
+  padding: 20px;
+}
+  .best-games__list li {
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 120px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 5px; }
+ .best-games__list li span{
+  font-family: 'Gilroy Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+ }   
+.sidebar__content.best-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.best-games__list {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}   
+.best-games__list li:hover span{
+   color: #FF4C00;
+}
+.best-games__list img {
+    width: 157px;
+    margin-bottom: 10px;
+    border: 3px solid #F184A6;
+    border-radius: 20px;
+}
+.best-games__list img:hover {
+    border: 3px solid #FF4C00;
+}
+.vouted-games {
+  background: #94a9d1; }
+  .vouted-games__list li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #94a9d1;
+    padding: 5px 20px; }
+    .vouted-games__list li a .name {
+      color: #000000; }
+    .vouted-games__list li a:hover {
+      background: rgba(0, 0, 0, 0.25); }
+      .vouted-games__list li a:hover .name {
+        color: #aae1da; }
+    .vouted-games__list li a.active, .vouted-games__list li a:active {
+      background: rgba(0, 0, 0, 0.4); }
+      .vouted-games__list li a.active .name, .vouted-games__list li a:active .name {
+        color: #aae1da; }
+    .vouted-games__list li a .views {
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      color: #cf37b3; }
+      .vouted-games__list li a .views span {
+        font-size: 13px;
+        line-height: 1; }
+  .vouted-games__list li img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 5px; }
+  .vouted-games__list li:last-child {
+    margin-bottom: 0; }
+
+ .recommended-games {
+  padding: 20px 30px 20px 30px;
+  background: #5fb7b9;
+  /*box-shadow: inset -2px 8px 16px #5fb7b9, inset -12px -8px 16px #5fb7b9;*/
+  border-radius: 0px 0px 40px 40px;
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;}
+  .trending-games {
+  padding: 20px 30px 20px 30px;
+  background: #57837c;
+  /*box-shadow: inset 12px 8px 16px #5fb7b9, inset -12px -8px 16px #5fb7b9;*/
+  border-radius: 0px 0px 40px 40px;
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;}
+  .main__content.best-games {
+  padding: 20px 30px 20px 30px;
+  background: #57837c;
+  /*box-shadow: inset 12px 8px 16px #5fb7b9, inset -12px -8px 16px #5fb7b9;*/
+  border-radius: 0px 0px 40px 40px;
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;}
+  .recommended-games__thumb, .best-games__thumb {
+    display: block;
+    margin: 5px; }
+    .recommended-games__thumb img {
+      border: 2px solid #FFBCD1;
+      border-radius: 20px;
+      width: 115px;
+ }
+ .best-games__thumb img {
+      border: 2px solid #f09091;
+      border-radius: 20px;
+      width: 115px;
+ }
+ .main__content .item:hover img {
+    border-color: #fff;
+}
+  .recommended-games__slider {
+    padding: 0; }
+  .recommended-games .slick-slide div + div {
+    margin-top: 10px; }
+  .recommended-games .slick-prev, .recommended-games .slick-next {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px;
+    height: 58px;
+    background: url("/wp-content/themes/mortalkombat/img/slider-arrow-bg-normal.png") 0 0 no-repeat; }
+    .recommended-games .slick-prev:hover, .recommended-games .slick-next:hover {
+      background: url("/wp-content/themes/mortalkombat/img/slider-arrow-bg-hover.png") 0 0 no-repeat; }
+    .recommended-games .slick-prev:active, .recommended-games .slick-next:active {
+      background: url("/wp-content/themes/mortalkombat/img/slider-arrow-bg-active.png") 0 0 no-repeat; }
+  .recommended-games .slick-prev {
+    left: -60px; }
+  .recommended-games .slick-next {
+    right: -60px; }
+  .recommended-games .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 35px);
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+    .recommended-games .slick-dots li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 7px; }
+      .recommended-games .slick-dots li button {
+        font-size: 0;
+        border-radius: 50%;
+        padding: 3px;
+        background: #fa8509; }
+      .recommended-games .slick-dots li.slick-active {
+        width: 10px;
+        height: 10px;
+        background: #ffffff; }
+
+.catalog {
+  margin-bottom: 30px; 
+  background: #303b5e;
+    box-shadow: inset 12px 8px 16px #303b5e, inset -12px -8px 16px #303b5e; 
+    border-radius: 40px;
+	width: 100%;
+    }
+.catalog.related_posts {
+    border-radius: 0 0 40px 40px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}    
+  .catalog__title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    position: relative;
+    color: #FFFFFF; 
+    }
+  .catalog__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+   background: #ffffff;
+    box-shadow: inset 2px 2px 4px #ffffff, inset -6px -6px 12px #ffffff;
+    border-radius: 20px;
+    padding: 23px;
+    margin: 38px 30px; }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .gallery__item {
+    margin: 15px; }
+.catalog.related_posts .game-card{
+	margin: 18px 9px;
+}
+.game-card {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  max-width: 184px;
+  height: 240px;
+  margin: 18px 10px;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 8px 8px 16px #41516e;
+  border: solid 8px #41516e; }
+  .game-card:hover{
+    border: solid 8px #41516e; 
+    }
+  .game-card .thumb {
+    max-width: 156px;
+    height: 156px;
+    margin: 10px auto;
+    }
+  .game-card .thumb img {
+      border-radius: 8px;
+      width:100%; }
+  .game-card .name {
+    margin-top: 20px;
+    text-align: center; 
+    padding: 0 10px; }
+    .game-card .name a {
+	 text-decoration: none;
+	 color: inherit;
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+     font-family: 'Gilroy';
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+  .game-card:hover .thumb {
+    border: 2px solid #ffffff; }
+  .game-card:hover .name {
+    color: #FF4C00; }
+  .game-card:active .thumb {
+    border: 2px solid #aae1da; }
+  .game-card:active .name {
+    color: #aae1da; }
+
+.game-offer {
+  background: #ced2e1;
+  padding: 30px;
+  margin-bottom: 30px; 
+  border-radius: 40px 40px 40px 40px; }
+  .game-offer h2, .game-offer h3 {
+    margin-bottom: 20px; }
+  .game-offer__image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 178px; }
+    .game-offer__image img {
+      border-radius: 16px; }
+  .game-offer__comments {
+    position: relative;
+    max-width: 830px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px; }
+  .game-offer__window__frame {
+      position: relative;
+      min-height: 550px; }
+      .game-offer__window__frame iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .game-offer__window__top {
+      background: #F9F6FF;
+      border-radius: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; 
+      position: relative;
+      height:98px;
+     }
+      .game-offer__window__top .ratings {
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+    .ratings:after {
+    content: '';
+    position: absolute;
+    width: 124px;
+    height: 4px;
+    background: #ff3511;
+    top: 46px;
+    right: 0px;
+}  
+span.thumbs-rating-already-voted.thumbs-rating-show {
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+}  
+    .game_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+        .game_title h1{
+          font-family: 'Insaniburger';
+          font-weight: 400;
+          font-size: 34px;
+          line-height: 100%;
+          letter-spacing: -0.01em;
+          text-transform: uppercase;
+          color: #18091F;
+          margin-bottom: 10px;
+          }
+        .game_title .main_game_preview {
+          width: 74px;
+          height: 74px;
+          margin-right: 10px;
+          border-radius: 6px;
+         }
+      .game_body {
+          padding: 20px 0;
+      }
+        .game-offer__window__top .ratings .star-rating {
+          padding: 0 20px;
+          min-width: 100px; }
+        .game-offer__window__top .ratings .likes-rating {
+          display: flex;
+          align-items: center;
+          padding: 4px 5px;
+          flex-direction: column;
+          min-width: 150px;
+          margin-top: 14px;
+          }
+    button.thumbs-rating-up, .page_visit {
+    background: none !important;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    color: #000 !important;
+}
+button.thumbs-rating-up {
+    margin-left: 120px;
+}
+.thumbs-rating-container .thumbs-rating-down{
+  display: none;
+}
+/*.page_visit:after {
+    content: 'played';
+    position: absolute;
+    right: -54px;
+    top: 0px;
+}*/
+button.thumbs-rating-up:before {
+    content: url(/wp-content/themes/mortalkombat/img/icon-like.svg);
+    position: absolute;
+    left: -20px;
+    top: 7px;
+}
+.contact_form  {
+	background: #a07195;
+    padding: 12px;
+    border-radius: 20px;
+	width: 740px;
+	margin: 0 auto;
+	
+}	
+.contact_form input, .contact_form textarea
+{
+    background: #58406d !important;
+    border: none !important;
+    border-radius: 16px !important;
+    color: #fff !important;
+    position: relative;
+}	
+.contact_form input {
+	margin-bottom: 15px;
+}	
+.contact_form input {
+	height: 54px;
+	color:#fff !important;
+	padding-left: 10px;
+}
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+  color: #fff !important;
+}
+.contact_form textarea {
+	color:#fff !important;
+	padding-left: 10px;
+	font-size: 18px;
+	width: 100%;
+}
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    background: #583f6f !important;
+    width: 200px;
+	cursor: pointer;
+ }
+.contact_form .inputs p {
+    display: flex;
+    justify-content: space-between;
+}
+.page_visit img {
+    display: none;
+}
+span.a2a_svg.a2a_s__default.a2a_s_share2 {
+    display: none;
+}	
+  		
+    .game-offer__window__bottom {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px; 
+      background: #a07195;
+      margin-top: 12px;
+      border-radius: 12px 
+    }
+      .game-offer__window__bottom .links {
+        display: flex;
+        align-items: center; 
+        margin-top: 10px;}
+        .game-offer__window__bottom .links a {
+          margin-right: 7px; }
+          .game-offer__window__bottom .links a:last-child {
+            margin-right: 0; }
+      .game-offer__window__bottom .fullscreen {
+        width: 140px;
+        background: #ff3511;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+         }
+  .fullscreen.btn-fullscreen img {
+    margin-right: 10px;
+}       
+     .fullscreen.btn-fullscreen:hover {
+    background: #5fb7b9;
+   }  
+.comments a {
+    border: solid 1px #60406F;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 13px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+} 
+.comments img {
+    margin-right: 5px;
+}
+.comments a:hover, a.a2a_dd.addtoany_share_save.addtoany_share:hover {
+  background: #ff3511;
+}  
+a.a2a_dd.addtoany_share_save.addtoany_share {
+    border: solid 1px #60406F;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 13px 57px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+span.a2a_svg.a2a_s__default.a2a_s_a2a {
+    display: none;
+}
+a.a2a_dd.addtoany_share_save.addtoany_share:before{
+content: url(/wp-content/themes/mortalkombat/img/share.svg);
+position: absolute;
+left: 32px;
+top: 18px;
+}
+a.a2a_dd.addtoany_share_save.addtoany_share:after {
+    content: 'Share';
+}
+.midle_block_2 {
+    display: flex;
+    align-items: flex-start;
+}    
+
+.border-block {
+    padding: 40px 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 28px;
+    background: #d0a3e7;
+    background: -webkit-gradient(linear, left top, right top, from(#d0a3e7), to(#82b0f5));
+    background: linear-gradient(to right, #d0a3e7 0%, #82b0f5 100%);
+    -webkit-filter: progid:dximagetransform.microsoft.gradient(startColorstr="#d0a3e7", endColorstr="#82b0f5", GradientType=1);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr="#d0a3e7", endColorstr="#82b0f5", GradientType=1);
+  
+}
+
+.top_text {
+  background: #bab6a8;
+  box-shadow: inset 12px 8px 16px #bab6a8, inset -12px -8px 16px #bab6a8;
+  display: block;
+  padding: 34px 28px;
+  margin-bottom: 30px; 
+  border-radius: 40px;
+ }
+.top_text h1{
+font-family: 'Insaniburger';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: -0.02em;
+padding: 18px 60px;
+color: #244770;
+  background: #ffffff;
+    box-shadow: inset 2px 2px 4px #ffffff, inset -6px -6px 12px #ffffff;
+    border-radius: 20px;
+}
+.top_p {
+    background: #ffffff;
+    box-shadow: inset 2px 2px 4px #ffffff, inset -6px -6px 12px #ffffff;
+    border-radius: 20px;
+    margin-top: 12px;
+    padding: 8px;
+    min-height: 180px;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #7E6F9B;
+}
+.top_p img {
+    width: 300px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+}
+  .main__content.top_text p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #F4E8FF;
+}
+.main__head.new_games, .category .main__head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background: #303b5e;
+    box-shadow: inset 12px 8px 16px #303b5e, inset -12px -8px 16px #303b5e;
+    border-radius: 40px 40px 0 0;
+}
+.home_page .main__head.new_games {
+  background: #303b5e;
+  box-shadow: none;
+}
+.catalog.home_page {
+  background: #303b5e;
+  box-shadow: none;
+}
+.catalog.home_page .game-card {
+  box-shadow: 8px 8px 16px #41516e;
+    border: solid 8px #41516e;
+}
+.block-text.main_page {
+  background: #303b5e;
+  margin-right: 20px;
+}
+.reviews .heading {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background: #e1e1e1;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    padding-left: 20px;
+}
+.reviews .heading:before {
+    content: url(/wp-content/themes/mortalkombat/img/comment.svg);
+    position: absolute;
+    left: 28px;
+    top: 18px;
+}
+.reviews {
+    background: #58406d;
+    border-radius: 40px;
+    min-width: 320px;
+    padding-bottom: 10px;
+}
+.wp-block-button {
+    text-align: center;
+}
+button.glsr-button.wp-block-button__link {
+    background: #ff3511;
+}
+button.glsr-button.wp-block-button__link:hover {
+    background: #5fb7b9;
+}
+.glsr-textarea, .glsr-input {
+    background: #58406d !important;
+    border: none !important;
+    border-radius: 16px !important;
+    color: #fff !important;
+    position: relative;
+}
+.glsr-input {
+  height: 54px;
+}
+.glsr-input::placeholder, .glsr-textarea::placeholder {
+  color: #fff !important;
+}
+.reviews_body, .reviews_form {
+    background: #b5b4b5;
+    margin: 10px 8px;
+    padding: 12px;
+    border-radius: 20px;
+}
+.glsr-review-date span {
+    color: #626160;
+}
+.glsr-review-author span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.glsr-review-content {
+    color: #eee;
+    font-size: 12px;
+}
+.glsr-default .glsr-review-date{
+  justify-content: flex-end;
+}
+.glsr-review {
+    border-bottom: #361A44 solid 1px;
+    padding-bottom: 15px;
+}
+.glsr-review:last-child {
+  border: none;
+}
+.nav-links a {
+    color: #fff;
+}
+.catalog.category {
+  padding-bottom: 10px;
+}
+.catalog.search_page {
+    padding: 10px 0;
+}
+  .game-day__image {
+    max-width: 185px;
+    width: 100%;
+    margin-right: 20px; }
+    .game-day__image img {
+      border-radius: 20px; }
+  .game-day__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.35; }
+  .game-day__views {
+    display: flex;
+    align-items: center;
+    color: #cf37b3; }
+    .game-day__views span {
+      font-size: 13px;
+      line-height: 1; }
+  .game-day__side {
+    position: relative;
+    flex: 1; }
+    .game-day__side__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px; }
+    .game-day__side--block {
+      display: flex;
+      flex-direction: column; }
+    .game-day__side--buttons {
+      margin-left: 20px; }
+
+.block-text {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #c8c8c5;
+  /*box-shadow: inset 12px 8px 16px #d86929, inset -12px -8px 16px #d86929;*/
+  border-radius: 40px;
+  }
+  .block-text div {
+  background: #ffffff;
+  box-shadow: inset 2px 2px 4px #ffffff, inset -6px -6px 12px #f0f0f0;
+  border-radius: 20px;
+  padding: 30px;
+  }
+
+.block-text p, .block-text li {
+  font-family: 'Gilroy';
+font-size: 16px;
+line-height: 130%;
+letter-spacing: -0.01em;
+color: #979299;
+}
+.catalog.home_page.last .catalog__list {
+    padding: 20px;
+    margin: 38px 28px;
+}
+.catalog.home_page.last .game-card {
+    margin: 18px 10px;
+}    
+.block-text.main_page .category {
+    margin-top: 30px;
+}
+.category span {
+    font-size: 20px;
+}
+
+.block-text h2{
+font-family: 'Insaniburger';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 100%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #18091F;
+margin-bottom: 14px;
+}
+.block-text h3 {
+font-family: 'Insaniburger';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #18091F;
+margin-bottom: 14px;
+}
+.block-text img.alignright.size-full.wp-image-2345 {
+    display: inline;
+    float: right;
+    margin-left: 15px;
+    margin-top: -80px
+}
+.breadcrumbs {
+  position: relative;
+  margin-bottom: 10px; }
+
+.breadcrumb {
+  display: flex; }
+  .breadcrumb li {
+    display: flex; }
+
+.pagination-container {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .pagination li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #FF4C00;
+border: 2px solid #7F190B;
+box-shadow: inset 3px -4px 0px #B41910, inset -3px 3px 0px #F59087;
+border-radius: 10px; }
+    .pagination li a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+    height: 32px;
+    background: #A92A0C;
+    box-shadow: inset 1px -1px 0px #f56851, inset -1px 1px 0px #9c1305;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Gilroy Bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 16px; }
+     .pagination li a:hover{
+      background: #FF4C00;
+      box-shadow: none;
+      }
+      .pagination li.current {
+      color:#fff;
+      font-family: 'Gilroy Bold';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 16px;
+      background: #FF4C00;
+      border: 2px solid #7F190B;
+      box-shadow: inset 3px -4px 0px #B41910, inset -3px 3px 0px #F59087;
+      border-radius: 10px; }
+      .pagination li a::before {
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+ .footer-copyright img {
+    height: 70px;
+}   
+.footer{
+  background: #1e2746;
+  min-height: 94px;
+ }
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    }
+.footer-flex .menu i{
+  display: none;
+}
+a.back-to-top {
+    background: #ff3511;
+    padding: 15px 17px;
+    border-radius: 12px;
+}
+a.back-to-top:hover {
+    background: #FFDC00;
+}    
+.footer-flex .icon-all_games {
+   background: url(/wp-content/themes/mortalkombat/img/AllGame_footer.png) center no-repeat;
+}
+.footer-flex .icon-popular {
+  background: url(/wp-content/themes/mortalkombat/img/Popular-footer.png) center no-repeat;
+}
+.footer-flex .icon-best_games {
+  background: url(/wp-content/themes/mortalkombat/img/BestGames-footer.png) center no-repeat;
+}
+.footer-flex .icon-top10 {
+  background: url(/wp-content/themes/mortalkombat/img/Top10-footer.png) center no-repeat;
+}
+ul.list_category div {
+    float: right;
+    padding: 0 6px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #000000;
+  }
+ul.list_category img {
+    padding: 3px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 50px;
+}
+ul.list_category li {
+    display: flex;
+    align-items: center;
+    float: left;
+    background: #e1e1e1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 0px 10px 8px 0px;
+    padding: 10px 16px;
+}
+ul.list_category li:hover{
+   background: #FE9738;
+}
+ul.list_category li:hover div{
+    color: #FF4C00;
+}
+ul.list_category{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.related__title {
+    max-width: 240px;
+    margin-right: 76px;
+    margin-right: 76px;
+    margin-top: 75px;
+    padding-left: 75px;
+    position: relative;
+}
+.related__title h2{
+  font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.related{
+  display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(/wp-content/themes/mortalkombat/img/RelatedGames.png) 0 0 no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+
+.mypoint {
+    list-style: none;
+	font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -.01em;
+    color: #ffffff;
+}
+.mypoint li::before {
+    content: "\2022";
+    color: #00ace4;
+    margin-left: 10px;
+    display: inline-block;
+    width: 20px;
+	
+}
+strong { font-weight: bold; }
